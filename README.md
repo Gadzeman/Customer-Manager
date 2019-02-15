@@ -54,13 +54,13 @@ Open another terminal from the `nest-react-customer-list-app` and navigate to th
 ### Frontend dependencies
 ```bash
 cd customer-list-app-frontend-react
-npm install
+yarn install
 ```
 
 ### Run the frontend app
 
 ```bash
-npm run serve
+yarn start
 ```
 
 ### Test the application
