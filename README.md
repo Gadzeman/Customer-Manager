@@ -1,21 +1,21 @@
-# Build a blog using Nest.js, Vue.js and MongoDB
+# Build a blog using Nest.js, React.js and MongoDB
 
 Application repo for a customer list management application built with Nest.js, Vue.js and MongoDB.
 
 ## Getting Started
 This prototype is divided into two separate sections. Namely the Backend ( Built with Nest.js) and the frontend
-( Built with Vue.js ).
+( Built with React.js ).
 
 ### Clone the repository
-To easily set up the application, clone this repository which contains directory for both sections of the project ( i.e `customer-list-app-backend` and `customer-list-app-frontend`)
+To easily set up the application, clone this repository which contains directory for both sections of the project ( i.e `customer-list-app-backend` and `customer-list-app-frontend-react`)
 
 ```bash
-git clone https://github.com/yemiwebby/nest-customer-list-app.git
+git clone https://github.com/yemiwebby/nest-react-customer-app.git
 ```
 
 ## Change directory into the newly cloned project
 ```bash
-cd nest-customer-list-app
+cd nest-react-customer-app
 ```
 
 ## Backend
@@ -46,14 +46,14 @@ Open another terminal and still within the `customer-list-app-backend` project d
 npm run start
 ```
 
-This will start the backend application on port `3000`.
+This will start the backend application on port `5000`.
 
 ## Frontend
-Open another terminal from the `nest-customer-list-app` and navigate to the `customer-list-app-frontend` folder to setup the frontend
+Open another terminal from the `nest-react-customer-list-app` and navigate to the `customer-list-app-frontend-react` folder to setup the frontend
 
 ### Frontend dependencies
 ```bash
-cd customer-list-app-frontend
+cd customer-list-app-frontend-react
 npm install
 ```
 
@@ -64,12 +64,12 @@ npm run serve
 ```
 
 ### Test the application
-Finally open your browser and view the application on http://localhost:8080
+Finally open your browser and view the application on http://localhost:3000
 
 ## Prerequisites
  [Node.js](https://nodejs.org/en/), [Npm](https://www.npmjs.com/), [MongoDB](https://docs.mongodb.com/v3.2/installation/)
 
 ## Built With
 [Nest.js](https://nestjs.com/)
-[Vue.js](https://vuejs.org/)
+[React.js](https://reactjs.org/)
 [MongoDB]() 
