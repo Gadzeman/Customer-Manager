@@ -56,16 +56,15 @@ class Create extends Component {
         const submitted = this.state.submitted;
         return (
             <div className="App">
-                {submitted && (
-                    <div className="alert alert-info" role="alert">
-                        Customer created successfully
-                    </div>
-                )}
-
                 <h1>Customer List Management App</h1>
                 <p> Built with Nest.js, React.js and MongoDB </p>
 
                 <div className={'col-md-12 form-wrapper'}>
+                    {submitted && (
+                        <div className="alert alert-info" role="alert">
+                            Customer created successfully
+                    </div>
+                    )}
                     <h2> Create Customer </h2>
                     <form id="create-post-form" onSubmit={(e) => { this.createPost(e) }}>
                         <div className="form-group col-md-12">
