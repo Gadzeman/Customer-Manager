@@ -100,7 +100,7 @@ class Edit extends Component {
                                 </div>
 
                                 <div className="form-group col-md-4 pull-right">
-                                    <button className="btn btn-success" type="submit"> Create Customer </button>
+                                    <button className="btn btn-success" type="submit"> Update Customer </button>
                                 </div>
                             </form>
                         </div>

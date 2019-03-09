@@ -34,7 +34,7 @@ class Home extends Component {
         return (
             <div>
                 {customers.length === 0 && (
-                    <div>
+                    <div className="text-center">
                         <h2>No customer found at the moment</h2>
                     </div>
                 )}
@@ -42,7 +42,7 @@ class Home extends Component {
                 <div className="container">
                     <div className="row">
                         <table className="table table-bordered">
-                            <thead className="thead-dark">
+                            <thead className="thead-light">
                                 <tr>
                                     <th scope="col">Firstname</th>
                                     <th scope="col">Lastname</th>
