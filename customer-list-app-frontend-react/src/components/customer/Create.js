@@ -27,7 +27,7 @@ class Create extends Component {
             last_name: this.state.last_name,
             email: this.state.email,
             phone: this.state.phone,
-            address: this.state.phone,
+            address: this.state.address,
             description: this.state.description
         }
         this.setState({ submitted: true });
@@ -56,8 +56,6 @@ class Create extends Component {
         const submitted = this.state.submitted;
         return (
             <div className="App">
-                <h1>Customer List Management App</h1>
-                <p> Built with Nest.js, React.js and MongoDB </p>
 
                 <div className={'col-md-12 form-wrapper'}>
                     {submitted && (

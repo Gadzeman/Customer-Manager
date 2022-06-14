@@ -57,9 +57,6 @@ class Edit extends Component {
                 {this.state.customer &&
                     <div>
 
-                        < h1 > Customer List Management App</h1>
-                        <p> Built with Nest.js, React.js and MongoDB </p>
-
                         <div className={'col-md-12 form-wrapper'}>
                             {submitted && (
                                 <div className="alert alert-info" role="alert">
