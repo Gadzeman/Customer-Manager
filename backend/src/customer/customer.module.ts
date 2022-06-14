@@ -6,9 +6,9 @@ import { CustomerSchema } from './schemas/customer.schema';
 
 @Module({
   imports: [
-    MongooseModule.forFeature([{ name: 'Customer', schema: CustomerSchema }])
+    MongooseModule.forFeature([{ name: 'Customer', schema: CustomerSchema }]),
   ],
   controllers: [CustomerController],
-  providers: [CustomerService]
+  providers: [CustomerService],
 })
 export class CustomerModule { }

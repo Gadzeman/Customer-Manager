@@ -1,12 +1,44 @@
 version: '3.7'
 services:
+  frontend:
+    container_name: 'customer-manager-frontend'
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    env_file:
+      - ./frontend/.env
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./frontend:/usr/app
+      - /usr/app/node_modules
+    command: npm start
+    restart: always
+
   mongodb_container:
     image: 'mongo'
-    container_name: 'customer-list-db'
+    container_name: 'customer-manager-db'
     ports:
       - '27017:27017'
     volumes:
       - mongodb_data_container:/data/db
 
+  backend:
+    container_name: 'customer-manager-backend'
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./backend:/usr/app
+      - /usr/app/node_modules
+    command: npm run start
+    restart: always
+    depends_on:
+      - mongodb_container
+
 volumes:
+  frontend:
   mongodb_data_container:
+  backend:

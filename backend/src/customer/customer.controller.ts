@@ -27,9 +27,9 @@ export class CustomerController {
     async addCustomer(@Res() res, @Body() createCustomerDTO: CreateCustomerDTO) {
         const customer = await this.customerService.addCustomer(createCustomerDTO);
         return res.status(HttpStatus.OK).json({
-            message: "Customer has been created successfully",
-            customer
-        })
+            message: 'Customer has been created successfully',
+            customer,
+        });
     }
 
     // Update a customer's details
@@ -39,7 +39,7 @@ export class CustomerController {
         if (!customer) throw new NotFoundException('Customer does not exist!');
         return res.status(HttpStatus.OK).json({
             message: 'Customer has been successfully updated',
-            customer
+            customer,
         });
     }
 
@@ -50,7 +50,7 @@ export class CustomerController {
         if (!customer) throw new NotFoundException('Customer does not exist');
         return res.status(HttpStatus.OK).json({
             message: 'Customer has been deleted',
-            customer
-        })
+            customer,
+        });
     }
 }
