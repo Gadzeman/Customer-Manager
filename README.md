@@ -21,7 +21,7 @@ cd nest-react-customer-app
 ## Backend
 ### Change directory into the backend
 ```bash
-cd customer-list-app-backend
+cd backend
 ```
 
 ### Install backend dependencies
@@ -53,7 +53,7 @@ Open another terminal from the `nest-react-customer-list-app` and navigate to th
 
 ### Frontend dependencies
 ```bash
-cd customer-list-app-frontend-react
+cd frontend
 yarn install
 ```
 
