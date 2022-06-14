@@ -6,8 +6,8 @@ import { CustomerModule } from './customer/customer.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://customer-manager-db/customer-app', { useNewUrlParser: true }),
-    CustomerModule
+    MongooseModule.forRoot(process.env.DB_CONNECT_URL, { useNewUrlParser: true }),
+    CustomerModule,
   ],
   controllers: [AppController],
   providers: [AppService],
